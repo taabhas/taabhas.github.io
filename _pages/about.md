@@ -1,13 +1,42 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Aabha Tamhankar"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+I am a Robotics Engineering PhD candidate at <a href="https://wpi.edu/">WPI</a> associated with the <a href="https://future-lab.wpi.edu/">FuTURE Lab</a>. My research focuses on autonomous navigation of pre-bent catheterization tools for acute ischemic stroke interventions.
+
+Previously, I completed my Master’s in Robotics Engineering at WPI, where I developed an automated guidance system for lumbar puncture procedures. My thesis, <i>"Automated Guidance for Lumbar Puncture Process",</i> explored real-time needle localization using ultrasound imaging to enhance procedural accuracy.
+
+My educational values are deeply influenced by insights of the <a href = "https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect">Dunning-Kruger Effect</a>. I believe that excellence comes from a contant pursuit of knowledge, the humility to question what we know, and the courage to embrace what we don’t.
+
+News
+------
+<font size="3"><ul>
+
+ <li>February, '25 - <a href="https://arxiv.org/abs/2502.15971" target="_blank" rel="noopener noreferrer">Towards Autonomous Navigation of Neuroendovascular Tools for Timely Stroke Treatment via Contact-aware Path Planning</a> got accepted at <a href="https://ismr.gatech.edu/2025/2025-welcome" target="_blank" rel="noopener noreferrer">ISMR 2025</a>!</li>
+
+<li>August, '24 - Started my PhD at WPI with <a href="https://future-lab.wpi.edu/">FuTURE Lab</a></li>
+
+<li>May, '24 - Graduated Master's in Robotics Engineering from WPI</li>
+
+<li>April, '24 - Successfully Defended my <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NlcNljEAAAAJ&citation_for_view=NlcNljEAAAAJ:u5HHmVD_uO8C">Master's Thesis</a> titled Image Guidance and Safe Insertion Region Localization for Lumbar Puncture using Ultrasound. <a href="https://www.linkedin.com/feed/update/urn:li:activity:7193807126610247680/">See post.</a>
+
+<li>Won People's Choice for GRIE Poster Presentation at for my master's thesis. <a href = "https://www.linkedin.com/feed/update/urn:li:activity:7166584080514367488/"> See post</a></li>
+
+<li>May, '23 - Started my summer internship at <a href = "https://www.mathworks.com/">Mathworks</a>, Natick, as an EDG intern.</li>
+
+<!-- MORE:
+<details>
+<summary><i>More...</i></summary>
+  <font size="2"><ul>  </ul></font></details><p></p> -->
+
+               
+
+<!-- This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
 
 A data-driven personal website
 ======
@@ -46,4 +75,4 @@ Example: editing a markdown file for a talk
 
 For more info
 ------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful. -->

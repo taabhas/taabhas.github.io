@@ -5,8 +5,11 @@
 # prevent it from being included in the site.
 
 main:
-  # - title: "Publications"
-  #   url: /publications/
+  - title: "Publications"
+    url: /publications/
+
+  - title: "Teaching"
+    url: /teaching/
 
   # - title: "Talks"
   #   url: /talks/    
@@ -20,8 +23,9 @@ main:
   # - title: "Blog Posts"
   #   url: /year-archive/
     
-  # - title: "CV"
-  #   url: /cv/
+  - title: "CV"
+    url: https://drive.google.com/file/d/1slZKo06T9fIDvaoBAWb7aE3aTH9csD8O/view
+    target: _blank
     
   # - title: "Guide"
   #   url: /markdown/

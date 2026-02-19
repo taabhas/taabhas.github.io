@@ -1,20 +1,15 @@
 ---
-title: "Teaching experience 1"
+title: "Teaching Assistant - Computer Vision"
 collection: teaching
-type: "Undergraduate course"
+type: "Graduate course"
 permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
-date: 2014-01-01
-location: "City, Country"
+venue: "WPI, Robotics Engineering"
+date: 2024-01-01
+location: "Worcester, USA"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+Teaching Assistant for <a href = "https://pear.wpi.edu/teaching/rbe549/spring2024.html">RBE/CS549 Computer Vision(Spring 2024)</a> course at WPI, with Professor  <a href = "https://nitinjsanket.github.io/">Nitin J. Sanket<a>
 
-Heading 1
-======
+Supported graduate-level course on classical and deep learning approaches for geometric computer vision, covering advanced topics including image formation, feature detection, 3D reconstruction, Structure from Motion, Neural Radiance Fields (NeRF), and Visual Inertial Odometry.
 
-Heading 2
-======
-
-Heading 3
-======
+Taught a class on Optical Flow and Velocities. Watch my lecture <a href = "https://pear.wpi.edu/teaching/rbe549/spring2024.html#:~:text=Optical%20Flow%20and%20Velocities"> here</a>!

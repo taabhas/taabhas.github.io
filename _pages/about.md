@@ -17,6 +17,8 @@ News
 ------
 <font size="3"><ul>
 
+ <li>January, '26 - <a href="https://arxiv.org/abs/2601.07945" target="_blank" rel="noopener noreferrer">Contact-aware Path Planning for Autonomous Neuroendovascular Navigation</a> got accepted at in Robotics & Automation Letters (R-AL)!</li>
+
  <li>February, '25 - <a href="https://arxiv.org/abs/2502.15971" target="_blank" rel="noopener noreferrer">Towards Autonomous Navigation of Neuroendovascular Tools for Timely Stroke Treatment via Contact-aware Path Planning</a> got accepted at <a href="https://ismr.gatech.edu/2025/2025-welcome" target="_blank" rel="noopener noreferrer">ISMR 2025</a>!</li>
 
 <li>August, '24 - Started my PhD at WPI with <a href="https://future-lab.wpi.edu/">FuTURE Lab</a></li>
@@ -25,9 +27,11 @@ News
 
 <li>April, '24 - Successfully Defended my <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NlcNljEAAAAJ&citation_for_view=NlcNljEAAAAJ:u5HHmVD_uO8C">Master's Thesis</a> titled Image Guidance and Safe Insertion Region Localization for Lumbar Puncture using Ultrasound. <a href="https://www.linkedin.com/feed/update/urn:li:activity:7193807126610247680/">See post.</a>
 
-<li>Won People's Choice for GRIE Poster Presentation at for my master's thesis. <a href = "https://www.linkedin.com/feed/update/urn:li:activity:7166584080514367488/"> See post</a></li>
+<li>February, '24 - Won People's Choice for GRIE Poster Presentation at for my master's thesis. <a href = "https://www.linkedin.com/feed/update/urn:li:activity:7166584080514367488/"> See post</a></li>
 
 <li>May, '23 - Started my summer internship at <a href = "https://www.mathworks.com/">Mathworks</a>, Natick, as an EDG intern.</li>
+
+<li>August, '22 - Started my Master's in Robotics Engineeing at <a href = "https://www.wpi.edu/">WORCESTER POLYTECHNIC INSTITUTE</a>, Worcester, MA.</li>
 
 <!-- MORE:
 <details>

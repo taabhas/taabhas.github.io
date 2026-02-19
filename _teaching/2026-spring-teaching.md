@@ -4,12 +4,12 @@ collection: teaching
 type: "Graduate course"
 permalink: /teaching/2014-spring-teaching-1
 venue: "WPI, Robotics Engineering"
-date: 2025-01-01
+date: 2026-01-01
 location: "Worcester, USA"
 ---
 
-Teaching Assistant for <a href = "https://pear.wpi.edu/teaching/rbe549/spring2025.html">RBE/CS549 Computer Vision(Spring 2025)<a> course at WPI, with Professor <a href = "https://nitinjsanket.github.io/">Nitin J. Sanket<a>
+Teaching Assistant for <a href = "https://pear.wpi.edu/teaching/rbe549/spring2026.html">RBE/CS549 Computer Vision(Spring 2026)<a> course at WPI, with Professor <a href = "https://nitinjsanket.github.io/">Nitin J. Sanket<a>
 
 Supported graduate-level course on classical and deep learning approaches for geometric computer vision, covering advanced topics including image formation, feature detection, 3D reconstruction, Structure from Motion, Neural Radiance Fields (NeRF), and Visual Inertial Odometry.
 
-Taught a class on Motion Segmentation. Watch my lecture <a href = "https://pear.wpi.edu/teaching/rbe549/spring2025.html#:~:text=Slides%2C%20Video%3A-,Motion%20Segmentation,-26"> here</a>!
+<!-- Taught a class on Deep Learning and Neural Networks. -->

@@ -1,35 +1,118 @@
 ---
 layout: archive
-title: "Publications"
+title: "Research"
 permalink: /publications/
 author_profile: true
 ---
 
 {% if site.author.googlescholar %}
-<div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar
+<div class="wordwrap">Find all my articles on <a href="{{site.author.googlescholar}}">my Google Scholar
     profile</a>.</div>
 {% endif %}
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-{% for category in site.publication_category %}
-{% assign title_shown = false %}
+<style>
+.research-tile {
+  display: flex;
+  gap: 1.5em;
+  padding: 1.5em 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.research-tile:last-child {
+  border-bottom: none;
+}
+
+.research-tile__image {
+  flex: 0 0 250px;
+  max-width: 250px;
+}
+
+.research-tile__image img,
+.research-tile__image video {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.research-tile__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.research-tile__title {
+  font-size: 1.1em;
+  margin: 0 0 0.3em 0;
+  line-height: 1.3;
+}
+
+.research-tile__title a {
+  color: var(--global-link-color, #2f7f93);
+  text-decoration: none;
+}
+
+.research-tile__title a:hover {
+  color: var(--global-link-color-hover, #236171);
+  text-decoration: underline;
+}
+
+.research-tile__venue {
+  font-size: 0.9em;
+  color: #555;
+  margin: 0 0 0.4em 0;
+}
+
+.research-tile__authors {
+  font-size: 0.85em;
+  color: #444;
+  margin: 0 0 0.5em 0;
+}
+
+.research-tile__excerpt {
+  font-size: 0.88em;
+  color: #333;
+  margin: 0 0 0.6em 0;
+  line-height: 1.5;
+}
+
+.research-tile__links {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.research-tile__links a {
+  font-size: 0.85em;
+  color: var(--global-link-color, #2f7f93);
+  text-decoration: none;
+  padding: 0.2em 0.6em;
+  border: 1px solid var(--global-link-color, #2f7f93);
+  border-radius: 3px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.research-tile__links a:hover {
+  background: var(--global-link-color, #2f7f93);
+  color: #fff;
+}
+
+.research-tile__links a i {
+  margin-right: 0.3em;
+}
+
+@media (max-width: 600px) {
+  .research-tile {
+    flex-direction: column;
+  }
+  .research-tile__image {
+    flex: none;
+    max-width: 100%;
+  }
+}
+</style>
+
 {% for post in site.publications reversed %}
-{% if post.category != category[0] %}
-{% continue %}
-{% endif %}
-{% unless title_shown %}
-<h2>{{ category[1].title }}</h2>
-<hr />
-{% assign title_shown = true %}
-{% endunless %}
-{% include archive-single.html %}
+{% include research-tile.html %}
 {% endfor %}
-{% endfor %}
-{% else %}
-{% for post in site.publications reversed %}
-{% include archive-single.html %}
-{% endfor %}
-{% endif %}

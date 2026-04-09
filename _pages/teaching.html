@@ -1,12 +1,86 @@
 ---
 layout: archive
-title: "Teaching"
+title: "Service"
 permalink: /teaching/
 author_profile: true
 ---
 
 {% include base_path %}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+<style>
+.service-tile {
+  display: flex;
+  align-items: center;
+  padding: 1em 1.2em;
+  margin-bottom: 1em;
+  background: #fff;
+  border-left: 3px solid var(--global-link-color, #2f7f93);
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  transition: box-shadow 0.2s;
+}
+
+.service-tile:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.service-tile__icon {
+  font-size: 1.4em;
+  margin-right: 0.8em;
+  flex-shrink: 0;
+}
+
+.service-tile__text {
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+.service-tile__text strong {
+  color: #333;
+}
+
+.service-tile__text a {
+  color: var(--global-link-color, #2f7f93);
+  text-decoration: none;
+}
+
+.service-tile__text a:hover {
+  text-decoration: underline;
+}
+
+.service-section {
+  margin-bottom: 1.5em;
+}
+</style>
+
+<div class="service-section">
+
+<div class="service-tile">
+  <span class="service-tile__icon">🎓</span>
+  <div class="service-tile__text">
+    <strong>Teaching Assistant</strong> &mdash; <a href="https://pear.wpi.edu/teaching/rbe549/spring2026.html">RBE/CS 549 Computer Vision (Spring 2026)</a>, WPI
+  </div>
+</div>
+
+<div class="service-tile">
+  <span class="service-tile__icon">🎓</span>
+  <div class="service-tile__text">
+    <strong>Teaching Assistant</strong> &mdash; <a href="https://pear.wpi.edu/teaching/rbe549/spring2025.html">RBE/CS 549 Computer Vision (Spring 2025)</a>, WPI
+  </div>
+</div>
+
+<div class="service-tile">
+  <span class="service-tile__icon">🎓</span>
+  <div class="service-tile__text">
+    <strong>Teaching Assistant</strong> &mdash; <a href="https://pear.wpi.edu/teaching/rbe549/spring2024.html">RBE/CS 549 Computer Vision (Spring 2024)</a>, WPI
+  </div>
+</div>
+
+<div class="service-tile">
+  <span class="service-tile__icon">📝</span>
+  <div class="service-tile__text">
+    <strong>Reviewer</strong> &mdash; ISMR, ICRA, IROS, T-RO
+  </div>
+</div>
+
+</div>

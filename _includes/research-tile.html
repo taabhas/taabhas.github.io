@@ -1,0 +1,57 @@
+{% include base_path %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<div class="research-tile">
+  <div class="research-tile__image">
+    {% if post.image %}
+      {% assign img = post.image %}
+      {% if img contains ".mp4" or img contains ".webm" %}
+        <video src="{{ img | prepend: base_path }}" autoplay loop muted playsinline></video>
+      {% elsif img contains ".gif" %}
+        <img src="{{ img | prepend: base_path }}" alt="{{ title }}">
+      {% else %}
+        <img src="{{ img | prepend: base_path }}" alt="{{ title }}">
+      {% endif %}
+    {% else %}
+      <img src="{{ base_path }}/images/pubs/placeholder.svg" alt="Paper image placeholder">
+    {% endif %}
+  </div>
+  <div class="research-tile__content">
+    <h2 class="research-tile__title">
+      {% if post.paperurl %}
+        <a href="{{ post.paperurl }}">{{ title }}</a>
+      {% else %}
+        {{ title }}
+      {% endif %}
+    </h2>
+
+    <p class="research-tile__venue">
+      <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}
+    </p>
+
+    {% if post.authors %}
+      <p class="research-tile__authors">{{ post.authors }}</p>
+    {% endif %}
+
+    {% if post.excerpt %}
+      <p class="research-tile__excerpt">{{ post.excerpt | markdownify | remove: "<p>" | remove: "</p>" | truncatewords: 40 }}</p>
+    {% endif %}
+
+    <div class="research-tile__links">
+      {% if post.paperurl %}
+        <a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> Paper</a>
+      {% endif %}
+      {% if post.slidesurl %}
+        <a href="{{ post.slidesurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-powerpoint"></i> Slides</a>
+      {% endif %}
+      {% if post.codeurl %}
+        <a href="{{ post.codeurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-code"></i> Code</a>
+      {% endif %}
+    </div>
+  </div>
+</div>

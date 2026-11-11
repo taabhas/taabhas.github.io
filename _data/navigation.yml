@@ -11,5 +11,8 @@ main:
   - title: "Service"
     url: /teaching/
 
+  - title: "Achievements"
+    url: /achievements/
+
   - title: "CV"
     url: /cv/

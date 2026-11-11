@@ -1,0 +1,261 @@
+---
+layout: archive
+title: "Achievements"
+permalink: /achievements/
+author_profile: true
+---
+
+{% include base_path %}
+
+<style>
+.ach-carousel {
+  position: relative;
+  margin: 1em 0 2em;
+  outline: none;
+}
+
+.ach-carousel__viewport {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 20, 0.12);
+  background: #fff;
+}
+
+.ach-carousel__track {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: transform 0.5s ease;
+}
+
+.ach-slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.ach-slide__media {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--global-bg-color);
+  border-bottom: 3px solid #001f5b;
+  overflow: hidden;
+}
+
+.ach-slide__media img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.ach-slide__media i {
+  font-size: 5em;
+  color: #001f5b;
+}
+
+.ach-slide__body {
+  padding: 1.5em 1.8em 2em;
+  min-height: 210px;
+}
+
+.ach-slide__date {
+  margin: 0 0 0.3em;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+}
+
+.ach-slide__title {
+  margin: 0 0 0.5em;
+  font-size: 1.25em;
+  color: var(--global-heading-color);
+}
+
+.ach-slide__text {
+  margin: 0 0 1em;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+.ach-slide__link {
+  font-size: 0.9em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.ach-slide__link:hover {
+  text-decoration: underline;
+}
+
+.ach-carousel__btn {
+  position: absolute;
+  top: 200px;
+  transform: translateY(-50%);
+  width: 2.4em;
+  height: 2.4em;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  color: #000014;
+  box-shadow: 0 1px 6px rgba(0, 0, 20, 0.25);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.ach-carousel__btn:hover,
+.ach-carousel__btn:focus-visible {
+  background: #001f5b;
+  color: #fff;
+}
+
+.ach-carousel__btn--prev { left: 0.7em; }
+.ach-carousel__btn--next { right: 0.7em; }
+
+.ach-carousel__dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  margin-top: 1em;
+}
+
+.ach-carousel__dot {
+  width: 0.75em;
+  height: 0.75em;
+  padding: 0;
+  border: 1px solid #000014;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.ach-carousel__dot:hover {
+  background: #001f5b;
+}
+
+.ach-carousel__dot[aria-current="true"] {
+  background: #000014;
+}
+
+@media (max-width: 600px) {
+  .ach-slide__media { height: 260px; }
+  .ach-carousel__btn { top: 130px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ach-carousel__track { transition: none; }
+}
+</style>
+
+<div class="ach-carousel" id="ach-carousel" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Achievements">
+  <div class="ach-carousel__viewport">
+    <ul class="ach-carousel__track">
+      {% for item in site.data.achievements %}
+      <li class="ach-slide" role="group" aria-roledescription="slide" aria-label="{{ forloop.index }} of {{ forloop.length }}">
+        <div class="ach-slide__media">
+          {% if item.image %}
+            <img src="{{ base_path }}{{ item.image }}" alt="{{ item.title | escape }}" loading="lazy">
+          {% else %}
+            <i class="{{ item.icon | default: 'fa-solid fa-award' }}" aria-hidden="true"></i>
+          {% endif %}
+        </div>
+        <div class="ach-slide__body">
+          <p class="ach-slide__date">{{ item.date }}</p>
+          <h2 class="ach-slide__title">{{ item.title }}</h2>
+          {% if item.text %}<p class="ach-slide__text">{{ item.text }}</p>{% endif %}
+          {% if item.link %}<a class="ach-slide__link" href="{{ item.link }}" target="_blank" rel="noopener noreferrer">{{ item.link_text | default: "Learn more" }} &rarr;</a>{% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <button class="ach-carousel__btn ach-carousel__btn--prev" type="button" aria-label="Previous achievement"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></button>
+  <button class="ach-carousel__btn ach-carousel__btn--next" type="button" aria-label="Next achievement"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+
+  <div class="ach-carousel__dots">
+    {% for item in site.data.achievements %}
+    <button class="ach-carousel__dot" type="button" aria-label="Go to achievement {{ forloop.index }}"></button>
+    {% endfor %}
+  </div>
+</div>
+
+<script>
+(function () {
+  var root = document.getElementById('ach-carousel');
+  if (!root) return;
+  var track = root.querySelector('.ach-carousel__track');
+  var slides = root.querySelectorAll('.ach-slide');
+  var dots = root.querySelectorAll('.ach-carousel__dot');
+  var count = slides.length;
+  var index = 0;
+  var timer = null;
+  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function go(i) {
+    index = (i + count) % count;
+    track.style.transform = 'translateX(' + (-100 * index) + '%)';
+    for (var d = 0; d < dots.length; d++) {
+      dots[d].setAttribute('aria-current', d === index ? 'true' : 'false');
+    }
+    for (var s = 0; s < count; s++) {
+      slides[s].setAttribute('aria-hidden', s === index ? 'false' : 'true');
+      var links = slides[s].querySelectorAll('a');
+      for (var l = 0; l < links.length; l++) links[l].tabIndex = s === index ? 0 : -1;
+    }
+  }
+
+  function start() {
+    if (reduced || count < 2) return;
+    stop();
+    timer = setInterval(function () { go(index + 1); }, 6000);
+  }
+
+  function stop() {
+    if (timer) clearInterval(timer);
+    timer = null;
+  }
+
+  root.querySelector('.ach-carousel__btn--prev').addEventListener('click', function () { go(index - 1); start(); });
+  root.querySelector('.ach-carousel__btn--next').addEventListener('click', function () { go(index + 1); start(); });
+  for (var d = 0; d < dots.length; d++) {
+    (function (i) { dots[i].addEventListener('click', function () { go(i); start(); }); })(d);
+  }
+
+  root.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowLeft') { go(index - 1); start(); }
+    if (e.key === 'ArrowRight') { go(index + 1); start(); }
+  });
+
+  root.addEventListener('mouseenter', stop);
+  root.addEventListener('mouseleave', start);
+  root.addEventListener('focusin', stop);
+  root.addEventListener('focusout', start);
+
+  var startX = null;
+  root.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; stop(); }, { passive: true });
+  root.addEventListener('touchend', function (e) {
+    if (startX === null) return;
+    var dx = e.changedTouches[0].clientX - startX;
+    if (Math.abs(dx) > 40) go(index + (dx < 0 ? 1 : -1));
+    startX = null;
+    start();
+  });
+
+  if (count < 2) {
+    root.querySelector('.ach-carousel__btn--prev').style.display = 'none';
+    root.querySelector('.ach-carousel__btn--next').style.display = 'none';
+    root.querySelector('.ach-carousel__dots').style.display = 'none';
+  }
+
+  go(0);
+  start();
+})();
+</script>

@@ -1,0 +1,49 @@
+# Achievements shown in the carousel on /achievements/ (in this order, newest first).
+# Fields:
+#   title    (required)  main heading of the slide
+#   date     (required)  shown above the title
+#   icon     (optional)  Font Awesome class, used when there is no image
+#   image    (optional)  path to a photo, e.g. /images/achievements/ismr-award.jpg
+#   text     (optional)  short description (HTML allowed)
+#   link     (optional)  URL for the "Learn more" button
+#   link_text (optional) label for that button (default "Learn more")
+
+- title: "1st Place, Stäubli Future Medical Roboticists Award"
+  date: "IROS 2026 · Pittsburgh, PA"
+  image: /images/achievements/IROS26_award_web.jpg
+  text: "For research on contact-aware path planning at the &ldquo;Training the Future Medical Roboticists&rdquo; workshop, IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2026."
+
+- title: "Paper Presentation, IROS 2026"
+  date: "IROS 2026 · Pittsburgh, PA"
+  image: /images/achievements/IROS26_aabha_talk_web.jpg
+  text: "Presented the IEEE Robotics &amp; Automation Letters (RA-L) contribution <i>Contact-aware Path Planning for Autonomous Neuroendovascular Navigation</i> (A. Tamhankar, R. Alterovitz, A. S. Puri, G. Pittiglio) at IROS 2026."
+  link: "https://arxiv.org/abs/2601.07945"
+  link_text: "Read the paper"
+
+- title: "Paper Presentation, ISMR 2026"
+  date: "2026"
+  image: /images/achievements/ISMR26_aabha_talk.jpeg
+  text: "Presented <i>An Anatomy-specific Guidewire Shaping Robot for Improved Vascular Navigation</i> at the International Symposium on Medical Robotics (ISMR) 2026."
+  link: "https://arxiv.org/abs/2602.04050"
+  link_text: "Read the paper"
+
+- title: "2nd Place, Best Student Paper Award, ISMR 2025"
+  date: "2025 · Atlanta, GA"
+  image: /images/achievements/ISMR25_award.jpg
+  text: "IEEE International Symposium on Medical Robotics (ISMR) 2025, for <i>Towards Autonomous Navigation of Neuroendovascular Tools for Timely Stroke Treatment via Contact-aware Path Planning</i> (A. Tamhankar, G. Pittiglio)."
+  link: "https://arxiv.org/abs/2502.15971"
+  link_text: "Read the paper"
+
+- title: "Paper Presentation, ISMR 2025"
+  date: "2025 · Atlanta, GA"
+  image: /images/achievements/ISMR25_aabha_talk_web.jpg
+  text: "Presented <i>Towards Autonomous Navigation of Neuroendovascular Tools for Timely Stroke Treatment via Contact-aware Path Planning</i> at ISMR 2025."
+  link: "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11025974"
+  link_text: "Read the paper"
+
+- title: "People's Choice Award, GRIE"
+  date: "February 2024"
+  image: /images/achievements/grie.jpeg
+  text: "Graduate Research Innovation Exchange (GRIE) poster presentation at WPI, for my Master's thesis poster <i>Image Guidance and Needle Trajectory Planning for Lumbar Puncture using Ultrasound Images</i>."
+  link: "https://www.linkedin.com/feed/update/urn:li:activity:7166584080514367488/"
+  link_text: "See post"

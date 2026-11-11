@@ -48,7 +48,7 @@
     color: $notice-color;
 
     &:hover {
-      color: mix(#000, $notice-color, 40%);
+      color: var(--global-link-color-hover);
     }
   }
 

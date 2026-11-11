@@ -40,3 +40,51 @@
     "vendor/font-awesome/brands",
     "vendor/magnific-popup/magnific-popup"
 ;
+
+/* Navy blue hover colour for all links (placed last so it wins over earlier link rules) */
+body a:hover {
+  color: var(--global-link-color-hover);
+}
+
+/* Name, titles, headings and other major non-clickable text */
+h1, h2, h3, h4, h5, h6,
+.page__title,
+.page__related-title,
+.page__meta-title,
+.archive__subtitle,
+.author__name,
+.sidebar .author__name,
+.nav__title,
+strong, b {
+  color: var(--global-heading-color);
+}
+
+/* keep bold text inside links looking like a link */
+a strong, a b {
+  color: inherit;
+}
+
+/* Links that otherwise inherit grey text colour */
+.author__urls a,
+.nav__list a,
+.page__footer a,
+.page__meta a,
+.page__related a,
+figcaption a {
+  color: var(--global-link-color);
+}
+
+.nav__list .active,
+.nav__list .active:hover {
+  color: #fff;
+}
+
+/* Top navigation: original colour, dark blue on hover */
+.greedy-nav a:hover {
+  color: var(--global-masthead-link-color-hover);
+}
+
+/* Sidebar location and employer */
+.author__urls li.author__desktop {
+  color: var(--global-heading-color);
+}
